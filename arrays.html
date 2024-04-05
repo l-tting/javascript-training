@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let myarray = ["brian","dennis","john","lennox",["armel","kim",[100,200]],"rama",22,10,true,false]
+        console.log(myarray)
+        console.log(myarray[1])
+        console.log(myarray[1][2])
+        console.log(myarray[4][1])
+        console.log(myarray[4][2][1])
+        // // modifying
+        myarray[0]="letting"
+        console.log(myarray)
+        // // adding data
+        myarray.push("kevin")
+        console.log(myarray)
+        // // remove
+        myarray.pop()
+        console.log(myarray)
+
+        myarray.reverse()
+        console.log(myarray)
+        
+        myarray.sort()
+        console.log(myarray)
+
+        myarray.toString()
+        console.log(typeof(myarray))
+        
+        myarray.join('/')
+        console.log(myarray)
+
+        myarray.shift()
+        console.log(myarray)
+
+        let myarr =myarray.slice(4,6)
+        console.log(myarr)
+
+    </script>
+</body>
+</html>
