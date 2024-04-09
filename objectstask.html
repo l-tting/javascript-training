@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a new file called objectTask and attempt the below questions:
+        //     my_object= [23, “Jane”, (560), [“Lesson”, “Maths”, {“currency” : “KES”}], 987, (76,”John”)]
+        //     Display:
+        //     1. KES
+        //     2. 560
+        //     3. Maths
+        let my_object = [23,"Jane",(560),["Lesson","Maths",{"currency":"KES"}],987,(76,"John")]
+        console.log(Object.values(my_object[3][2]))
+        console.log(my_object[2])
+        console.log(my_object[3][1])
+
+        // In the object with the key currency, add another key “amount” with value 90
+
+        my_object[3][2].amount = "90"
+        console.log(my_object)
+
+        // Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+
+        my_object[4] = 789
+        console.log(my_object[4])
+
+        // Change the name “John” to “Jane” 
+        my_object[5] = "Jane"
+         console.log(my_object[5])
+    </script>
+</body>
+</html>
