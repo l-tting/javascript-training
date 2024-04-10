@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//  Create a file called mygrade.html.Create a variable called marks that stores a value from a prompt given.Test that is is between 0 and 100. 
+// If the number is above 100 or below 0 give an error
+// Alert the grade of the student using the conditions below
+//  >= 70 - A
+//    < 70 and >= 60 - B
+//                 < 60 and >= 50 - C
+//                     < 50 and >= 40 - D
+//                         < 40 - E
+        let marks = prompt("Enter Marks")
+        if (marks>=0 && marks<=100){
+            if(marks>=70){
+                alert("grade A")
+            }
+            else if(marks>=60 && marks <70){
+                alert("grade B")
+            }
+            else if(marks>=50 && marks <60){
+                alert("grade C")
+            }
+            else if(marks>=40 && marks <50){
+                alert("grade B")
+            }
+            else{
+                alert("grade E")
+            }
+        }
+        else{
+            alert("error")
+        }
+    </script>
+</body>
+
+</html>
