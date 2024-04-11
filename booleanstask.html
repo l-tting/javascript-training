@@ -17,11 +17,11 @@
         else {
             alert("False")
         }
-        
+
         // // Console log a boolean that gives you true only when an email is a valid email. 
         // Do not use regular expressions.
         let email = prompt("Enter email")
-        if ((email.includes("@") == true) && (email.includes('.') == true) && (email.indexOf('@') < email.indexOf('.'))) {
+        if ((email.includes("@") == true) && (email.includes('.') == true) && ((email.indexOf('@')+1) < email.indexOf('.')) && (email.indexof('.')!=(email.length-1))&&(email.indexOf("@")!=0)){
             alert('email valid')
         }
         else {
