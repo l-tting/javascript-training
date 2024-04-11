@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Console log a boolean that checks if a number is between 0 and 100 
+        let num = prompt("enter number")
+        if (num >= 0 && num <= 100) {
+            alert("True")
+        }
+        else {
+            alert("False")
+        }
+        
+        // // Console log a boolean that gives you true only when an email is a valid email. 
+        // Do not use regular expressions.
+        let email = prompt("Enter email")
+        if ((email.includes("@") == true) && (email.includes('.') == true) && (email.indexOf('@') < email.indexOf('.'))) {
+            alert('email valid')
+        }
+        else {
+            alert('email invalid')
+        }
+
+        // Console log a boolean that gives you true only when a phone number is a valid Kenyan 
+        // phone number. If someone enters either +254712345678, 254712345678, 0712345678 , 712345678,
+        //0112345678, 112345678 it should be valid also 
+        let phone = prompt("enter phone number")
+        if ((phone.slice(0, 4) == "+254" && phone.length == 13) || (phone.slice(0, 3) == '254' && phone.length == 12) ||
+            (phone.slice(0, 2) == "07" || phone.slice(0, 2) == "01" && phone.length == 10) || (phone.slice(0, 1) == "7" || phone.slice(0, 1) == "1" && phone.length == 9)) {
+            alert("Phone number valid")
+        }
+        else {
+            alert("Number invalid")
+        }
+
+    </script>
+</body>
+
+</html>
