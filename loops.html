@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p id="loops"></p>
+    </div>
+    <script>
+        //loop through 0 and 100
+        for (i=0;i<100;i++){
+            console.log(i)
+        }
+
+        //display even numbers between 200 and 1000 
+        let even = []
+        for (i=200;i<1000;i++){
+            if (i%2==0){
+                even.push(i)
+            }
+        }
+        console.log(even)
+        document.getElementById('loops').innerHTML = even
+
+        
+    </script>
+</body>
+</html>

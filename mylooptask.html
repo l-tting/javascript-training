@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //numbers divisible by 5 & 7
+        let x = []
+        let y = []
+        let z = []
+        let numbers = []
+        for (num=0;num<500;num++){
+            if (num%5==0 && num%7==0){
+                numbers.push(num)
+            }
+        }
+        console.log(numbers)
+
+        for (num=20;num<80;num++){
+            if (num%5==0 && num%7==0){
+                x.push(num)
+            }
+        }
+        console.log(x)
+
+        for (num=20;num<80;num++){
+            if ( num%7==0){
+                y.push(num)
+            }
+        }
+        console.log(y)
+        //
+        for (num=20;num<80;num++){
+            if ( num%7==0){
+                z.push(num)
+            }
+        }
+        console.log(z)
+        
+    </script>
+</body>
+</html>
