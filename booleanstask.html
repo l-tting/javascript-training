@@ -21,7 +21,8 @@
         // // Console log a boolean that gives you true only when an email is a valid email. 
         // Do not use regular expressions.
         let email = prompt("Enter email")
-        if ((email.includes("@") == true) && (email.includes('.') == true) && ((email.indexOf('@')+1) < email.indexOf('.')) && (email.indexof('.')!=(email.length-1))&&(email.indexOf("@")!=0)){
+        if ((email.includes("@") == true) && (email.includes('.') == true) && ((email.indexOf('@')+1) < email.indexOf('.')) && 
+        (email.indexof('.')!=(email.length-1))&&(email.indexOf("@")!=0)){
             alert('email valid')
         }
         else {
@@ -33,7 +34,8 @@
         //0112345678, 112345678 it should be valid also 
         let phone = prompt("enter phone number")
         if ((phone.slice(0, 4) == "+254" && phone.length == 13) || (phone.slice(0, 3) == '254' && phone.length == 12) ||
-            (phone.slice(0, 2) == "07" || phone.slice(0, 2) == "01" && phone.length == 10) || (phone.slice(0, 1) == "7" || phone.slice(0, 1) == "1" && phone.length == 9)) {
+            (phone.slice(0, 2) == "07" || phone.slice(0, 2) == "01" && phone.length == 10) || (phone.slice(0, 1) == "7" || 
+            phone.slice(0, 1) == "1" && phone.length == 9)) {
             alert("Phone number valid")
         }
         else {
