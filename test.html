@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = {}
+        let ob = []
+        let list = [
+            {
+                "name":"brian",
+                "age": 25
+            },
+            {
+                "name":"jane",
+                "age": 29
+            },
+            {
+                "name":"john",
+                "age": 35
+            },
+            {
+                "name":"Kate",
+                "age":12
+            }
+        ]
+        for (let i =0;i < list.length;i++){
+            a = list[i].age
+            if (a<45){
+            ob.push(a)
+            }
+        }
+        console.log(ob)
+        console.log(ob.length)
+        x.name = ob.length
+        console.log(x)
+    </script>
+</body>
+</html>

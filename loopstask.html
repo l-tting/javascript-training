@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myloop">
+        <table>
+            <tr>
+                <th>range</th>
+                <th>population</th>
+            </tr>
+            <tr>
+                <td>0-50m</td>
+                <td id="one"></td>
+            </tr>
+            <tr>
+                <td>50-100m</td>
+                <td id="two"></td>
+            </tr>
+            <tr>
+                <td>>100</td>
+                <td id="three"></td>
+            </tr>
+            
+        </table>
+    </div>
+    <script src="countries.js"></script>
+    <script>
+        // Using the link HERE , copy the array of JSON objects containing countries with their populations. 
+        //Display in an object, how many countries have population between 0 - 50m, 50m - 100m, > 100m as the keys
+        // e.g 
+	    // pops = { “0-50m” : 216, “50-100m” : 16, ” >100m” : 13 }
+
+        let x = []
+        let y = []
+        let z = []
+        let obj = {}
+        
+             
+       for (let i=0;i<c.length;i++){
+            p = c[i].population
+            if (p>=0 && p<=50000000){
+                x.push(p)
+            }
+            else if (p>50000000 && p<=100000000){
+                y.push(p)
+            }
+            else{
+                z.push(p)
+            }
+
+       }
+        
+        let zero = '0-50m'
+        let fifty = '50-100m'
+        let hund = '>100m'
+        obj[zero] = x.length
+        obj[fifty] = y.length
+        obj[hund] = z.length
+
+        console.log(obj)
+        document.getElementById("one").innerHTML = obj['0-50m']
+        document.getElementById("two").innerHTML = obj['50-100m']
+        document.getElementById("three").innerHTML = obj['>100m']
+        // if (slice)
+    </script>
+</body>
+
+</html>
