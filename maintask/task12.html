@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="user"></div>
+    <script>
+        // Write a program that prints the largest of 4 inputs taken in from a user. 
+        // Assume that the user would not enter any two numbers which are the same.
+        let num1 = prompt("Enter number")
+        let num2 = prompt("Enter number")
+        let num3 = prompt("Enter number")
+        let num4 = prompt("Enter number")
+        if (num1>num2 && num1>num3 && num1>num4){
+            document.getElementById("user").innerHTML = num1 + "is the largest"
+        }
+        else if (num2>num1 && num2>num3 && num2>num4){
+            document.getElementById("user").innerHTML = num2 + "is the largest"
+        }
+        else if (num3>num1 && num3>num2 && num3>num4){
+            document.getElementById("user").innerHTML = num3 + "is the largest"
+        }
+        else{
+            document.getElementById("user").innerHTML = num4 + "is the largest"
+        }
+
+    </script>
+</body>
+</html>
