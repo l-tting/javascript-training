@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pass"></div>
+    <script>
+        // Write a program input a password. Give them only 4 attempts to 
+        // check the passwords entered against “admin@123”. If the password 
+        // is correct access is granted. After you show them a message , the account is blocked.
+
+        let pass = prompt("Enter password")
+        let password = "admin@123"
+        for (let i =4;i>0;i--){
+            if (pass == password){
+                document.getElementById('pass').innerHTML = "Access granted"
+            }
+            else if(i<5 && pass != password){
+                let repass = prompt("Re-enter password")
+            }
+            else{
+                document.getElementById('pass').innerHTML = "Access denied"
+            }
+        }
+    </script>
+</body>
+</html>

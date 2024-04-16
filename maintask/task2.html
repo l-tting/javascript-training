@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="even"></div>
+    <script>
+        // Prompt the user for a number either on a form input or the terminal.
+        //  Depending on whether the number is even or odd, display  either “odd” or “even” to the user.
+
+        let check = prompt("Enter number")
+        if (check%2==0){
+            document.getElementById('even').innerHTML ="even"
+        }
+        else{
+            document.getElementById('even').innerHTML = "odd"
+        }
+    </script>
+</body>
+</html>

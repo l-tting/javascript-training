@@ -42,7 +42,7 @@
         let obj = {}
         
              
-       for (let i=0;i<c.length;i++){
+       for ( let i=0;i<c.length;i++){
             p = c[i].population
             if (p>=0 && p<=50000000){
                 x.push(p)
@@ -55,14 +55,12 @@
             }
 
        }
+        console.log(x.length)
         
-        let zero = '0-50m'
-        let fifty = '50-100m'
-        let hund = '>100m'
-        obj[zero] = x.length
-        obj[fifty] = y.length
-        obj[hund] = z.length
-
+        obj['0-50m'] = x.length
+        obj['50-100m'] = y.length
+        obj['>100m'] = z.length
+       
         console.log(obj)
         document.getElementById("one").innerHTML = obj['0-50m']
         document.getElementById("two").innerHTML = obj['50-100m']

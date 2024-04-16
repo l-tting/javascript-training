@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="email">
+    </div>
+    <script>
+       // Write a program which accepts email as form input or from terminal. 
+        //Validate the email by checking if it's a valid email. 
+
+        let email = prompt("Enter email")
+        if (email.includes('@','.') && email.indexOf('.')>email.indexOf('@')){
+            document.getElementById('email').innerHTML=  "valid email"
+        }
+        else{
+            document.getElementById('email').innerHTML=  "valid email"
+
+        }
+    </script>
+</body>
+</html>

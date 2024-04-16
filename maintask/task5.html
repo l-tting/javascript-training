@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="large"></div>
+    <script>
+        let x = prompt("Enter number")
+        let y = prompt("Enter number")
+        let z = prompt("Enter number")
+        if (x>y && x>z){
+            document.getElementById('large').innerHTML =  x + " is the largest"
+        }
+        else if (y>x && y>z){
+            document.getElementById('large').innerHTML =  y + " is the largest"
+        }
+        else{
+            document.getElementById('large').innerHTML =  z + " is the largest"
+        }
+    </script>
+</body>
+</html>
