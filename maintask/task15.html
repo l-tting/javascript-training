@@ -27,53 +27,57 @@
             document.getElementById('nhif').innerHTML = "NHIF is KES.150"
         }
         else if(gross>=6000 && gross <8000){
-            document.getElementById('nhif').innerHTML = "300"
+            let nhif = 300
+            
         }
         else if(gross>=8000 && gross <12000){
-            document.getElementById('nhif').innerHTML = "400"
+            nhif = 400
         }
         else if(gross>=12000 && gross <15000){
-            document.getElementById('nhif').innerHTML = "500"
+            nhif = 500
         }
         else if(gross>=15000 && gross <20000){
-            document.getElementById('nhif').innerHTML = "600"
+            nhif= 600
         }
         else if(gross>=20000 && gross <25000){
-            document.getElementById('nhif').innerHTML = "750"
+           nhif = 750
         }
         else if(gross>=25000 && gross <30000){
-            document.getElementById('nhif').innerHTML = "850"
+            nhif = 850
         }
         else if(gross>=30000 && gross <35000){
-            document.getElementById('nhif').innerHTML = "900"
+            nhif = 900
         }
         else if(gross>=35000 && gross <40000){
-            document.getElementById('nhif').innerHTML = "950"
+            nhif = 950
         }
         else if(gross>=40000 && gross <45000){
-            document.getElementById('nhif').innerHTML = "1000"
+            nhif = 1000
         }
         else if(gross>=45000 && gross <50000){
-            document.getElementById('nhif').innerHTML = "1100"
+            nhif = 1100
         }
         else if(gross>=50000 && gross <60000){
-            document.getElementById('nhif').innerHTML = "1200"
+            nhif = 1200
         }
         else if(gross>=60000 && gross <70000){
-            document.getElementById('nhif').innerHTML = "1300"
+            nhif = 1300
         }
         else if(gross>=70000 && gross <80000){
-            document.getElementById('nhif').innerHTML = "1400"
+            nhif = 1400
         }
         else if(gross>=80000 && gross <90000){
-            document.getElementById('nhif').innerHTML = "1500"
+           nhif = 1500
         }
         else if(gross>=90000 && gross <10000){
-            document.getElementById('nhif').innerHTML = "1600"
+            nhif = 1600
+
+
         }
         else{
-            document.getElementById('nhif').innerHTML = "1700"
+            nhif = 1700
         }
+        document.getElementById("nhif").innerHTML = "NHIF is KES." + nhif
         // Continue with the program above, then use  the gross salary to find the NSSF. 
         // To find the Kenya NSSF Rate  using 6% of the Gross Salary. BUT ONLY A MAXIMUM 
         // OF 18,000 Gross Salary CAN BE USED IN NSSF. 
@@ -117,8 +121,8 @@
 
         // Continue with the same program and calculate an individual’s Net Salary using:
         // net_salary = gross_salary - (nhif + nhdf +  nssf + payee)
-        let net = gross - (nhif + nhdf + nssf + payee)
-        document.getElementById('net').innerHTML =net
+        let net = (gross-(nhif+nhdf+nssf+payee))
+        document.getElementById('net').innerHTML = "Net pay is KES." +net
 
     </script>
 </body>
