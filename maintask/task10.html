@@ -12,12 +12,14 @@
         // below if we know that the stock is the last digit in every array/list.
         // prods = [[‘omo’,’30kshs’,’300’], [‘milk’,’50kshs’,’200’],[‘bread’,’45kshs’,’359’], [‘coffee’,’5kshs’,’79’]]
         let total = 0
-        let prods = [['omo','30kshs','300'],['milk','50kshs','200'],['bread','45kshs','359'],['coffee','5kshs','79']]
+        let prods = [['omo','30kshs','300'],['milk','50kshs','200'],['bread','45kshs','359'],['coffee','5kshs','79'],['cookies','30kshs','500']]
+
         for (let i=0;i<prods.length;i++){
             let stock = Number(prods[i][2])
             total += stock
         }
         console.log(total)
+     
     </script>
 </body>
 </html>
