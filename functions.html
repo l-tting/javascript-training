@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //parameters - variables inside a function
+        //arguments -exact values passed inside a function
+        // create a function that says hello world
+        function hello(f_name,s_name){
+            console.log(`Hello ${f_name} ${s_name}`)
+        }
+        let name = prompt("Enter name")
+        let name_2 = prompt("Enter second name")
+        hello(name,name_2)
+
+        // //area of a triangle
+        function triangle(x,y){
+            let area = 0.5 * x * y
+            console.log(area)
+        }
+        triangle(10,5)
+
+        // //function to calc area of a rectangle
+        function rectangle(a,b){
+            let area = a * b
+            console.log(area)
+        }
+        let width = prompt("enter width")
+        let height = prompt("enter height")
+        rectangle(width,height)
+
+        // write a function checking if a no is odd/even
+        function odd_even(x){
+            if (x%2==0){
+                let result = "Even"
+            }
+            else{
+                result = "Odd"
+            }
+            return result
+        }
+        let num = prompt("Enter number")
+        let check = odd_even(num)
+        console.log(check)
+    </script>
+</body>
+</html>

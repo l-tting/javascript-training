@@ -11,15 +11,20 @@
         // Write a program that takes input of 2 values and adds them. 
         // The program should only accept numbers and floats only or otherwise
         //  display an error “invalid character entered” and take the user to re-enter the inputs .
-        let x = prompt("Enter x")
-        let y = prompt("Enter y")
-        if (x== Number(x) && y==Number(y)){
+            let x = Number(prompt('enter x'))
+            let y = Number(prompt('enter y'))
             let z = x + y
-        }
-        else{
-            alert("Invalid character entered")
-            let a = prompt("Re-enter")
-        }
+            if(x&&y=='Number'){
+                document.getElementById('input').innerHTML = z
+            }
+            else{
+                document.getElementById('input').innerHTML = 'invalid character entered'
+
+                x = prompt('enter x')
+                y = prompt('enter y')
+                document.getElementById('input').innerHTML = z
+
+            }
     </script>
 </body>
 </html>
