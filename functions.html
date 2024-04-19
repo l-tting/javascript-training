@@ -17,14 +17,14 @@
         let name_2 = prompt("Enter second name")
         hello(name,name_2)
 
-        // //area of a triangle
+        // // //area of a triangle
         function triangle(x,y){
             let area = 0.5 * x * y
             console.log(area)
         }
         triangle(10,5)
 
-        // //function to calc area of a rectangle
+        // // //function to calc area of a rectangle
         function rectangle(a,b){
             let area = a * b
             console.log(area)
@@ -33,7 +33,7 @@
         let height = prompt("enter height")
         rectangle(width,height)
 
-        // write a function checking if a no is odd/even
+        // // write a function checking if a no is odd/even
         function odd_even(x){
             if (x%2==0){
                 let result = "Even"
@@ -46,6 +46,25 @@
         let num = prompt("Enter number")
         let check = odd_even(num)
         console.log(check)
+        
+        //find the largest numbers in 3 user inputs
+        function largest(x,y,z){
+            if(x>y && x>z){
+                let result = `${x} is the largest`
+            }
+            else if(y>x && y>z){
+                result = `${y} is the largest`
+            }
+            else{
+                result = `${z} is the largest`
+            }
+            return result
+        }
+        let num1 = prompt("Enter number one")
+        let num2 = prompt("Enter number two")
+        let num3 = prompt("Enter number three")
+        let large = largest(num1,num2,num3)
+        console.log(large)
     </script>
 </body>
 </html>
