@@ -13,21 +13,25 @@
         // password is “Admin@123” , if so then print  “Login is Successful” and 
         // if not print “Invalid username or password”. ONLY accept 3 tries after 
         // which it notifies you that you have been blocked.
-        
-        for (let i =3;i>=1;i--){
+        let tries = 1
+        for (let i =0;i<4;i++){
             let email = prompt("Enter email")
             let password = prompt("Enter password")
-            if (email == 'admin@mail.com' && password=="Admin@123"){
+            if (email ==='admin@mail.com' && password==="Admin@123"){
                 document.getElementById('pass').innerHTML = "Login is successful"
                 break
         }
         
             else{
-              alert('Invalid')
-              if(i==3){
-                document.getElementById('pass').innerHTML = 'blocked'
+              console.log('Inavlid password')
+              tries++
+              if (tries>3){
+                alert('Blocked')
               }
-           }
+              else{
+                alert('try again')
+              }
+            }
         }
     </script>
 </body>

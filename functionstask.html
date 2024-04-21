@@ -31,7 +31,7 @@
 
         //nhif
         function nhif(a) {
-            if (a < 6000) {
+            if (a>=0 && a< 6000) {
                 let result = 150
             }
             else if (a >= 6000 && a < 8000) {
@@ -124,21 +124,22 @@
         // Continue with the same program and find the person's PAYEE using the taxable income above.
         // Find the Kenya PAYEE Tax Rate using THIS LINK
         function my_payee(inc) {
-            if (inc < 24000) {
+            let relief = 2400
+            if (inc>=0 && inc <= 24000) {
                 let result = 0
             }
-            else if (inc >= 24000 && inc <= 32333) {
-                result = ((inc - 24000) * 0.25) + (0.1 * 24000)
+            else if (inc >24000 && inc <= 32333) {
+                result = ((inc - 24000) * 0.25) + (0.1 * 24000) - relief
 
             }
             else if (inc > 32333 && inc <= 500000) {
-                result = (8233 * 0.25) + (0.1 * 24000) + ((inc - 32333) * 0.3)
+                result = (8333 * 0.25) + (0.1 * 24000) + ((inc - 32333) * 0.3) - relief
             }
             else if (inc > 500000 && inc <= 800000) {
-                result = (8233 * 0.25) + (0.1 * 24000) + ((inc - 32333) * 0.3) - ((inc - 467667) * 0.325)
+                result = (8333 * 0.25) + (0.1 * 24000) + (467667 * 0.3) - ((inc - 500000) * 0.325) - relief
             }
             else {
-                result = (8233 * 0.25) + (0.1 * 24000) + ((inc - 32333) * 0.3) - ((inc - 467667) * 0.325) + ((inc - 800000) * 0.35)
+                result = (8333 * 0.25) + (0.1 * 24000) + (8333 * 0.3) - (467667 * 0.325) +(300000*0.325) + ((inc - 800000) * 0.35) - relief
             }
             return result
         }
