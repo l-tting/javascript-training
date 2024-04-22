@@ -9,7 +9,7 @@ form.addEventListener('submit',function(e){
     }
     else{
         let gross = Number(basic) + Number(benefits)
-        document.getElementById('gross').innerHTML = `Gross salary is ${gross}`
+        document.getElementById('gross').innerHTML = gross
 }
 }) 
     
